@@ -35,8 +35,8 @@ const CommentReview = () => {
         const isValidForm = Object.keys(formData).every(field => validateField(field, formData[field]));
 
         if (!isValidForm) {
-            console.log("Form not submitted:", formData);
-            return;
+            // console.log("Form not submitted:", formData);
+            return alert("Form not submitted")
         }
 
         const starRating = "⭐".repeat(Number(formData.select)); // icon show
