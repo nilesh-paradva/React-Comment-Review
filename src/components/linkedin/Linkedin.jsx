@@ -10,8 +10,8 @@ const Linkedin = () => {
                         <p className="font-bold ps-2">Nilesh</p>
                     </div>
                     <div className="close">
-                        <a href="javascript:void(0)"><i className="fa-solid fa-ellipsis text-[20px]"></i></a>
-                        <a href="javascript:void(0)" className="ms-3"><i className="fa-solid fa-xmark text-[20px]"></i></a>
+                        <a href="#"><i className="fa-solid fa-ellipsis text-[20px]"></i></a>
+                        <a href="#" className="ms-3"><i className="fa-solid fa-xmark text-[20px]"></i></a>
                     </div>
                 </div>
                 <div className="discription">

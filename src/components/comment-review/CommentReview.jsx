@@ -29,8 +29,6 @@ const CommentReview = () => {
         validateField(name, value);
     }
 
-    const Id = Math.floor(Math.random()*10);
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -41,8 +39,9 @@ const CommentReview = () => {
             return;
         }
 
-        const starRating = "⭐".repeat(Number(formData.select));
-        const dataToSubmit = { ...formData, select: starRating };
+        const starRating = "⭐".repeat(Number(formData.select)); // icon show
+        const randomId = Math.floor(Math.random() * 10); // id store
+        const dataToSubmit = { ...formData, select: starRating, Id : randomId};
         setSubmittedData(prev => [...prev, dataToSubmit]);
 
         setFormData({ UserName: '', message: '', select: '' });
@@ -87,8 +86,8 @@ const CommentReview = () => {
                                                 <span>{data.UserName}</span>
                                             </div>
                                             <div className="time-setting flex items-center">
-                                                <span className="ps-2 pe-2">{(Id === 0) ? 1 : Math.floor(Math.random()*10)} Hours Ago</span>
-                                                <a href="Javascript:void(0)"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                                <span className="ps-2 pe-2">{data.Id} Hours Ago</span>
+                                                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                                             </div>
                                         </div>
                                         <div className="message flex items-center justify-between">
