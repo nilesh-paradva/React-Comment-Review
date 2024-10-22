@@ -86,7 +86,7 @@ const CommentReview = () => {
                                                 <span>{data.UserName}</span>
                                             </div>
                                             <div className="time-setting flex items-center">
-                                                <span className="ps-2 pe-2">{data.Id} Hours Ago</span>
+                                                <span className="ps-2 pe-2">{data.Id === 0 ? '1' : data.Id} Hours Ago</span>
                                                 <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                                             </div>
                                         </div>
