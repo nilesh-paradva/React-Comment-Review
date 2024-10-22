@@ -87,7 +87,7 @@ const CommentReview = () => {
                                                 <span>{data.UserName}</span>
                                             </div>
                                             <div className="time-setting flex items-center">
-                                                <span className="ps-2 pe-2">{(Id === 0) ? Math.floor(Math.random()*10): 1} Hours Ago</span>
+                                                <span className="ps-2 pe-2">{(Id === 0) ? 1 : Math.floor(Math.random()*10)} Hours Ago</span>
                                                 <a href="Javascript:void(0)"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                                             </div>
                                         </div>
